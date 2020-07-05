@@ -5,7 +5,7 @@
 # get_sorted_recommendations(["Bridesmaids", "Sherlock Holmes"])
 
 
-# some invocations that we use in the automated tests; uncomment these if you are getting errors and want better error messages
+
 # get_related_titles(["Black Panther", "Captain Marvel"])
 # get_related_titles([])
 #Doesnt work without the key!!!
@@ -39,10 +39,6 @@ def get_related_titles(l):
     return l2
 
 
-# some invocations that we use in the automated tests; uncomment these if you are getting errors and want better error messages
-# get_movie_rating(get_movie_data("Deadpool 2"))
-import json
-import requests_with_caching
 def get_movie_data(title):
     baseurl="http://www.omdbapi.com/"
     d={"r":"json","t":title}
